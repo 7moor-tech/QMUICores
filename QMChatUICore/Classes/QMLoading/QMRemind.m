@@ -68,7 +68,7 @@
     });
 }
 
-+ (void)showMessage:(NSString *)message showTime:(NSInteger)time andPosition:(CGFloat)position {
++ (void)showMessage:(NSString *)message showTime:(NSInteger)time andPosition:(NSInteger)position {
     __block NSInteger times = time;
     dispatch_async(dispatch_get_main_queue(), ^{
         UIView *showview = [self showView];

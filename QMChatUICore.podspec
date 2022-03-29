@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QMChatUICore'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = 'A short description of QMChatUICore.'
 
 # This description is used to generate tags and improve search results.
@@ -22,17 +22,17 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/7moor-tech/QMUICores'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+ 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '焦林生' => '18515384635@163.com' }
   s.source           = { :git => 'https://github.com/7moor-tech/QMUICores.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
   s.ios.deployment_target = '9.0'
 
-  s.source_files = '**/QMChatUICore/Classes/**/*'
-  
+  s.source_files = "QMChatUICore/Classes/**/*"
+       
    s.resource = [
-         '**/QMChatUICore/Assets/*.bundle'
+         'QMChatUICore/Assets/*.bundle'
     ]
 
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}

@@ -82,7 +82,7 @@ static NSString *QM_PingFangTC_Sem = @"PingFangTC-Semibold";
 
 //#define QMChatUIResource(name) [[[NSBundle mainBundle] pathForResource:@"QMChatUI" ofType:@"bundle"] stringByAppendingPathComponent:name]
 
-#define TUIBundlePath(bundleName) [[NSBundle bundleForClass:NSClassFromString(@"QMChatUI")] pathForResource:bundleName ofType:@"bundle"]
+#define TUIBundlePath(bundleName) [[NSBundle bundleForClass:[self class]] pathForResource:bundleName ofType:@"bundle"]
 #define TUIBundle(bundleName) [NSBundle bundleWithPath:TUIBundlePath(bundleName)]
 
 #define QMChatUIImagePath(imageName) [TUIBundlePath(QMChatUIBundle) stringByAppendingPathComponent:imageName]

@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param position 展示的位置--距顶部的高度
 + (void)showMessage:(NSString *)message
            showTime:(NSInteger)time
-        andPosition:(CGFloat)position;
+        andPosition:(NSInteger)position;
 
 @end
 
