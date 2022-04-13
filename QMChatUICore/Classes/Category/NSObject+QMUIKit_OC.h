@@ -43,6 +43,9 @@ typedef NS_ENUM(NSUInteger, QMButtonEdgeInsetsStyle) {
  */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
+/** 按钮事件响应间隔 */
+@property (nonatomic, assign) NSTimeInterval QM_eventTimeInterval;
+
 @end
 
 @interface UIImage (QMImage)
@@ -87,13 +90,6 @@ typedef NS_ENUM(NSUInteger, QMButtonEdgeInsetsStyle) {
 
 + (UIImage *)imageFromColor:(UIColor *)color;
 + (UIImage *)imageFromColor:(UIColor *)color size:(CGSize)size;
-
-@end
-
-@interface UIControl (QMCategory)
-
-/** 按钮事件响应间隔 */
-@property (nonatomic, assign) NSTimeInterval QM_eventTimeInterval;
 
 @end
 
