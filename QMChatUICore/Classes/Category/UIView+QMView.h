@@ -37,6 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)QM_ClipCorners:(UIRectCorner)corners radius:(CGFloat)radius;
 - (void)QM_ClipCorners:(UIRectCorner)corners radius:(CGFloat)radius border:(CGFloat)width color:(nullable UIColor *)color;
+/**
+ alter
+ */
+- (void)RockAlertTipTitle:(NSString *)aTitle
+                  message:(NSString *)aMessage
+              cancelTitle:(NSString *)aCancelTitle
+         confirmTitle:(NSString *)aConfirmTitle
+             cancelBlock:(void(^)(void))cancelBlock
+             confirmBlock:(void(^)(void))confirmBlock;
 
 @end
 

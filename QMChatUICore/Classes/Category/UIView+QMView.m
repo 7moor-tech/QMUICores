@@ -7,6 +7,12 @@
 
 #import "UIView+QMView.h"
 
+#define Block_Safe(block) {\
+    if (block) {\
+        block();\
+    }\
+}\
+
 @implementation UIView (QMView)
 
 /**
@@ -121,6 +127,25 @@
         }
     }
     return result;
+}
+
+- (void)RockAlertTipTitle:(NSString *)aTitle
+                  message:(NSString *)aMessage
+              cancelTitle:(NSString *)aCancelTitle
+         confirmTitle:(NSString *)aConfirmTitle
+             cancelBlock:(void(^)(void))cancelBlock
+        confirmBlock:(void(^)(void))confirmBlock{
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:aTitle message:aMessage preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:aCancelTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        Block_Safe(cancelBlock);
+    }];
+    UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:aConfirmTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        Block_Safe(confirmBlock);
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:confirmAction];
+    [[self getCurrentVC] presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

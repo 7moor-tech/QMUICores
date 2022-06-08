@@ -62,7 +62,7 @@ static NSString *QM_PingFangTC_Sem = @"PingFangTC-Semibold";
 
 
 /********** 通知 **********/
-#define TUIKitNotification_TIMRefreshListener @"TUIKitNotification_TIMRefreshListener"
+
 
 /// 字符串为空
 #define QMStringIsEmpty(str)     ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
@@ -82,12 +82,12 @@ static NSString *QM_PingFangTC_Sem = @"PingFangTC-Semibold";
 
 //#define QMChatUIResource(name) [[[NSBundle mainBundle] pathForResource:@"QMChatUI" ofType:@"bundle"] stringByAppendingPathComponent:name]
 
-#define TUIBundlePath(bundleName) [[NSBundle bundleForClass:[self class]] pathForResource:bundleName ofType:@"bundle"]
-#define TUIBundle(bundleName) [NSBundle bundleWithPath:TUIBundlePath(bundleName)]
+#define QMTUIBundlePath(bundleName) [[NSBundle bundleForClass:[self class]] pathForResource:bundleName ofType:@"bundle"]
+#define QMTUIBundle(bundleName) [NSBundle bundleWithPath:QMTUIBundlePath(bundleName)]
 
-#define QMChatUIImagePath(imageName) [TUIBundlePath(QMChatUIBundle) stringByAppendingPathComponent:imageName]
-#define QMChatResourcePath(imageName) [TUIBundlePath(QMChatUIResourceBundle) stringByAppendingPathComponent:imageName]
-#define QMUIComponentImagePath(imageName) [TUIBundlePath(QMUIComponentBundle) stringByAppendingPathComponent:imageName]
+#define QMChatUIImagePath(imageName) [QMTUIBundlePath(QMChatUIBundle) stringByAppendingPathComponent:imageName]
+#define QMChatResourcePath(imageName) [QMTUIBundlePath(QMChatUIResourceBundle) stringByAppendingPathComponent:imageName]
+#define QMUIComponentImagePath(imageName) [QMTUIBundlePath(QMUIComponentBundle) stringByAppendingPathComponent:imageName]
 
 
 /// 输出日志 (格式: [时间] [哪个方法] [哪行] [输出内容])

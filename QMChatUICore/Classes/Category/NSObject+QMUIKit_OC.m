@@ -21,7 +21,7 @@
 
 static char MSExtendEdgeKey;
 static const CGFloat QMEventDefaultTimeInterval = 0;
-
+/**
 #pragma mark -- 按钮事件点击间隔
 - (BOOL)isIgnoreEvent {
     return [objc_getAssociatedObject(self, @"isIgnoreEvent") boolValue];
@@ -77,7 +77,7 @@ static const CGFloat QMEventDefaultTimeInterval = 0;
           
     }
 }
-
+*/
 - (void)layoutButtonWithEdgeInsetsStyle:(QMButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space {
     
@@ -195,7 +195,7 @@ static const CGFloat QMEventDefaultTimeInterval = 0;
 
 + (UIImage *)QM_imageNamed:(NSString *)imageName bundle:(NSString *)bundleName;
 {
-    NSString *path = [TUIBundlePath(bundleName) stringByAppendingPathComponent:imageName];
+    NSString *path = [QMTUIBundlePath(bundleName) stringByAppendingPathComponent:imageName];
     return [UIImage QM_imageWithImageLight:path dark:[NSString stringWithFormat:@"%@_Dark",path]];
 }
 
