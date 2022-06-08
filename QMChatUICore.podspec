@@ -38,8 +38,8 @@ TODO: Add long description of the pod here.
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}
    s.requires_arc = true
    s.frameworks = 'UIKit'
-   s.dependency 'SDWebImage'
-   s.dependency 'Masonry'
+   s.dependency 'SDWebImage', '~> 5.12.5'
+   s.dependency 'Masonry', '~> 1.1.0'
    s.dependency 'JSONModel'
    s.dependency 'MJRefresh', '~> 3.6.1'
    
