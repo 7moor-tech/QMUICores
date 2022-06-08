@@ -41,6 +41,6 @@ TODO: Add long description of the pod here.
    s.dependency 'SDWebImage'
    s.dependency 'Masonry'
    s.dependency 'JSONModel'
-   s.dependency 'MJRefresh'
+   s.dependency 'MJRefresh', '~> 3.6.1'
    
 end
