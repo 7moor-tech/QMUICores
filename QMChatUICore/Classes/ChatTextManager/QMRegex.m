@@ -35,7 +35,7 @@ static NSString const *QM_TelephoneReg = @"(1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7
         NSArray *telephones = [reg matchesInString:text options:NSMatchingReportProgress range:NSMakeRange(0, text.length)];
         return telephones;
     } else {
-        return nil;
+        return [NSArray array];
     }
 }
 
@@ -46,7 +46,7 @@ static NSString const *QM_TelephoneReg = @"(1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7
         NSArray *telephones = [reg matchesInString:text options:NSMatchingReportProgress range:NSMakeRange(0, text.length)];
         return telephones;
     } else {
-        return nil;
+        return [NSArray array];
     }
 }
 

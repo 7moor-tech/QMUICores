@@ -268,7 +268,7 @@ static const CGFloat QMEventDefaultTimeInterval = 0;
 + (UIImage *)QM_imageWithImageLight:(NSString *)lightImagePath dark:(NSString *)darkImagePath {
     UIImage *lightImage = [UIImage imageNamed:lightImagePath];
     if (!lightImage) {
-        return nil;
+        return [UIImage new];
     }
     if (@available(iOS 13.0, *)) {
         UIImage *darkImage= [UIImage imageNamed:darkImagePath];

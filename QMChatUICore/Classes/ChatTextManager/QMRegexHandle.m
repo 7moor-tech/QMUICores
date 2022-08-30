@@ -12,7 +12,7 @@
 
 + (NSArray <NSTextCheckingResult *>*)getMobileNumberLoc:(NSString *)sourcStr {
     if (sourcStr.length == 0) {
-        return nil;
+        return [NSArray array];
     }
     NSString *regStr = @"1(3[0-9]|4[56789]|5[0-9]|6[6]|7[0-9]|8[0-9]|9[189])[0-9]{8}";
     NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:regStr options:NSRegularExpressionCaseInsensitive error:nil];
@@ -24,7 +24,7 @@
 //大于6位的数字
 + (NSArray <NSTextCheckingResult *>*)getNumberLoc:(NSString *)sourcStr {
     if (sourcStr.length == 0) {
-        return nil;
+        return [NSArray array];
     }
     NSString *regStr = @"[0-9]\\d{6,}";
     NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:regStr options:NSRegularExpressionCaseInsensitive error:nil];
