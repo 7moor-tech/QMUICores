@@ -20,7 +20,7 @@
 @implementation UIButton (QMCategory)
 
 static char MSExtendEdgeKey;
-static const CGFloat QMEventDefaultTimeInterval = 0;
+//static const CGFloat QMEventDefaultTimeInterval = 0;
 /**
 #pragma mark -- 按钮事件点击间隔
 - (BOOL)isIgnoreEvent {

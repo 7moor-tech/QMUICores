@@ -52,13 +52,13 @@ static NSString *QM_PingFangTC_Sem = @"PingFangTC-Semibold";
 
 /********** 常量 **********/
 #define kInputViewHeight 75
-#define kChatLeftAndRightWidth  QMFixWidth(67)
+#define kChatLeftAndRightWidth  QMFixWidth(58)
 #define QMChatTextMaxWidth (QM_kScreenWidth - kChatLeftAndRightWidth*2)
 #define kChatTopMargin 20
 #define kChatBottomMargin 10
-#define QMChatTextMinHeight 45
-#define kChatIconWidth QMFixWidth(45)
-#define kChatIconMargin QMFixWidth(12)
+#define QMChatTextMinHeight 42
+#define kChatIconWidth QMFixWidth(40)
+#define kChatIconMargin QMFixWidth(10)
 
 
 /********** 通知 **********/
