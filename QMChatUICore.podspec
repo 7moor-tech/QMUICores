@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QMChatUICore'
-  s.version          = '0.6'
+  s.version          = '0.7'
   s.summary          = 'A short description of QMChatUICore.'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
    s.frameworks = 'UIKit'
    s.dependency 'SDWebImage', '~> 5.12.5'
    s.dependency 'Masonry', '~> 1.1.0'
-   s.dependency 'JSONModel'
+   s.dependency 'JSONModel', '~> 1.8.0'
    s.dependency 'MJRefresh', '~> 3.6.1'
    
 end
