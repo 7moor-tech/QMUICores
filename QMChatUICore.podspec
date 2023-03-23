@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QMChatUICore'
-  s.version          = '0.7'
+  s.version          = '0.7.1'
   s.summary          = 'A short description of QMChatUICore.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.author           = { '焦林生' => '18515384635@163.com' }
   s.source           = { :git => 'https://github.com/7moor-tech/QMUICores.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = "QMChatUICore/Classes/**/*"
        
@@ -43,4 +43,5 @@ TODO: Add long description of the pod here.
    s.dependency 'JSONModel', '~> 1.8.0'
    s.dependency 'MJRefresh', '~> 3.6.1'
    
+   #pod trunk push  QMChatUICore.podspec --allow-warnings
 end

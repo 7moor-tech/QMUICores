@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isFinish;
 
 @property (nonatomic, assign) BOOL isOpenRead;
+//满意度配置项数量
+@property (nonatomic, assign) NSInteger evaluationNum;
 
 @property (nonatomic, strong) PHAsset *asset;
 
