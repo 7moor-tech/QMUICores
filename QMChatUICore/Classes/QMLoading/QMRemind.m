@@ -46,7 +46,7 @@
 }
 
 + (void)showMessage:(NSString *)message {
-    [self showMessage:message showTime:5];
+    [self showMessage:message showTime:3];
 }
 
 + (void)showMessage:(NSString *)message showTime:(NSInteger)time {

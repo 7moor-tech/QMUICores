@@ -88,6 +88,11 @@
     [self.layer addSublayer:subLayer];
 }
 
+- (void)QMBorderWidth:(CGFloat)width color:(nullable UIColor *)color {
+    self.layer.borderColor = color.CGColor;
+    self.layer.borderWidth = width;
+}
+
 //获取当前屏幕显示的viewcontroller
 - (UIViewController *)getCurrentVC {
     

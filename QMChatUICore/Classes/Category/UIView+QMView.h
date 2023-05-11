@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)QM_ClipCorners:(UIRectCorner)corners radius:(CGFloat)radius;
 - (void)QM_ClipCorners:(UIRectCorner)corners radius:(CGFloat)radius border:(CGFloat)width color:(nullable UIColor *)color;
+- (void)QMBorderWidth:(CGFloat)width color:(nullable UIColor *)color;
 /**
  alter
  */
