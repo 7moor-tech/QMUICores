@@ -6,4 +6,4 @@ QMUICores是容联·七陌平台iOS SDK的基础组件
 
 cocoapods 管理
 
-pod 'QMUICores', '~> 0.8'
+pod 'QMUICores', '~> 0.9'

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QMChatUICore'
-  s.version          = '0.8'
+  s.version          = '0.9'
   s.summary          = 'A short description of QMChatUICore.'
 
 # This description is used to generate tags and improve search results.
@@ -38,10 +38,10 @@ TODO: Add long description of the pod here.
    s.pod_target_xcconfig = {'VALID_ARCHS'=>'armv7 x86_64 arm64'}
    s.requires_arc = true
    s.frameworks = 'UIKit'
-   s.dependency 'SDWebImage', '~> 5.12.5'
+   s.dependency 'SDWebImage'
    s.dependency 'Masonry', '~> 1.1.0'
    s.dependency 'JSONModel', '~> 1.8.0'
-   s.dependency 'MJRefresh', '~> 3.6.1'
+   s.dependency 'MJRefresh', '~> 3.7.5'
    
    #pod trunk push  QMChatUICore.podspec --allow-warnings
 end

@@ -15,6 +15,76 @@
 
 @implementation UIView (QMView)
 
+-(void)setQM_top:(CGFloat)QM_top{
+    CGRect f = self.frame;
+    f.origin.y = QM_top;
+    self.frame = f;
+}
+
+-(CGFloat)QM_top{
+    return self.frame.origin.y;
+}
+
+-(void)setQM_left:(CGFloat)QM_left{
+    CGRect f = self.frame;
+    f.origin.x = QM_left;
+    self.frame = f;
+}
+
+-(CGFloat)QM_left{
+    return self.frame.origin.x;
+}
+
+- (void)setQM_width:(CGFloat)QM_width{
+    CGRect f = self.frame;
+    f.size.width = QM_width;
+    self.frame = f;
+}
+
+-(CGFloat)QM_width{
+    return self.frame.size.width;
+}
+
+-(void)setQM_height:(CGFloat)QM_height{
+    CGRect f = self.frame;
+    f.size.height = QM_height;
+    self.frame = f;
+}
+
+- (CGFloat)QM_height{
+    return self.frame.size.height;
+}
+
+-(void)setQM_centerX:(CGFloat)QM_centerX{
+    CGPoint c = self.center;
+    c.x = QM_centerX;
+    self.center = c;
+}
+
+-(CGFloat)QM_centerX{
+    return self.center.x;
+}
+
+-(void)setQM_centerY:(CGFloat)QM_centerY{
+    CGPoint c = self.center;
+    c.y = QM_centerY;
+    self.center = c;
+}
+
+- (CGFloat)QM_centerY{
+    return self.center.y;
+}
+
+-(void)setQM_size:(CGSize)QM_size{
+    CGRect f = self.frame;
+    f.size = QM_size;
+    self.frame = f;
+}
+
+-(CGSize)QM_size{
+    return self.frame.size;
+}
+
 /**
   ** lineView:       需要绘制成虚线的view
   ** lineLength:     虚线的宽度

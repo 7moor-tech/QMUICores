@@ -58,7 +58,7 @@
         label.text = message;
         CGSize LabelSize = [QMLabelText calculateText:message fontName:QM_PingFangSC_Reg fontSize:14 maxWidth:QM_kScreenWidth - 100 maxHeight:0];
         label.frame = CGRectMake(10, 5, LabelSize.width, LabelSize.height);
-        showview.frame = CGRectMake((QM_kScreenWidth - LabelSize.width - 20)/2, QM_kScreenHeight - label.frame.size.height - 180, LabelSize.width + 20, LabelSize.height + 10);
+        showview.frame = CGRectMake((QM_kScreenWidth - LabelSize.width - 20)/2, QM_kScreenHeight - label.frame.size.height - 200, LabelSize.width + 20, LabelSize.height + 10);
         times = times <= 0 ? 3 : times;
         [UIView animateWithDuration:times animations:^{
             showview.alpha = 0;

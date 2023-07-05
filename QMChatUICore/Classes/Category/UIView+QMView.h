@@ -11,6 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (QMView)
 
+@property (nonatomic, assign) CGFloat QM_top;
+@property (nonatomic, assign) CGFloat QM_left;
+@property (nonatomic, assign) CGFloat QM_width;
+@property (nonatomic, assign) CGFloat QM_height;
+@property (nonatomic, assign) CGFloat QM_centerX;
+@property (nonatomic, assign) CGFloat QM_centerY;
+@property (nonatomic, assign) CGSize  QM_size;
+
 /**
  *  设置圆角
  */
