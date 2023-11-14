@@ -20,6 +20,7 @@
 @implementation UIButton (QMCategory)
 
 static char MSExtendEdgeKey;
+static const void *UIButtonBlockKey = &UIButtonBlockKey;
 //static const CGFloat QMEventDefaultTimeInterval = 0;
 /**
 #pragma mark -- 按钮事件点击间隔
@@ -78,6 +79,18 @@ static char MSExtendEdgeKey;
     }
 }
 */
+#pragma mark --buttonAction 事件
+-(void)addActionHandler:(TouchedBlock)touchHandler{
+    objc_setAssociatedObject(self, UIButtonBlockKey, touchHandler, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self addTarget:self action:@selector(actionTouched:) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)actionTouched:(UIButton *)btn{
+    TouchedBlock block = objc_getAssociatedObject(self, UIButtonBlockKey);
+    if (block) {
+        block(btn.tag);
+    }
+}
+
 - (void)layoutButtonWithEdgeInsetsStyle:(QMButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space {
     

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef void (^TouchedBlock)(NSInteger tag);
 @interface NSObject (QMUIKit_OC)
 
 @end
@@ -43,6 +43,10 @@ typedef NS_ENUM(NSUInteger, QMButtonEdgeInsetsStyle) {
  */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
+/**
+ 添加 addtarget
+ */
+- (void)addActionHandler:(TouchedBlock)touchHandler;
 /** 按钮事件响应间隔 */
 //@property (nonatomic, assign) NSTimeInterval QM_eventTimeInterval;
 
