@@ -430,15 +430,15 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
                     NSInteger srcWeekday = [srcComponents weekday];
                     // 取出当前是星期几
                     NSString *weedayDesc = [weekdayAry objectAtIndex:(srcWeekday-1)];
-                    ret = [NSString stringWithFormat:@"%@%@",weedayDesc, timeExtraStr];
+                    ret = [NSString stringWithFormat:@"%@ %@",weedayDesc, timeExtraStr];
                 }else {
-                    ret = [NSString stringWithFormat:@"%@%@",[self getTimeString:date format:@"yyyy/M/d"], timeExtraStr];
+                    ret = [NSString stringWithFormat:@"%@ %@",[self getTimeString:date format:@"yyyy/M/d"], timeExtraStr];
                 }
             }
         }
     }else {
         // 往年
-        ret = [NSString stringWithFormat:@"%@%@", [self getTimeString:date format:@"yyyy/M/d"], timeExtraStr];
+        ret = [NSString stringWithFormat:@"%@ %@", [self getTimeString:date format:@"yyyy/M/d"], timeExtraStr];
     }
     return ret;
 }
